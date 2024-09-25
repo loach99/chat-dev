@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-chat</title>
+    <link rel="stylesheet" href="./src/chat.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/form.css" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" crossorigin="anonymous"/>
+</head>
+
+<!-- <div class="loader-container"> -->
+    <!-- <div class="spiner_wrap">
+        <div class="loader spinner"></div>
+        <div class="spinner-text">Подбираем вам специалиста...</div>
+    </div> -->
+<!--     <div class="page">
+        <div class="loadContainer">
+        <div class="loadInner">
+            <div class="loadCircle">
+                <div class="loadCircleInner"></div>
+            </div>
+            <div class="loadCircle">
+                <div class="loadCircleInner"></div>
+            </div>
+            <div class="loadCircle">
+                <div class="loadCircleInner"></div>
+            </div>
+            <div class="loadCircle">
+                <div class="loadCircleInner"></div>
+            </div>
+            <div class="loadCircle">
+                <div class="loadCircleInner"></div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="spinner-text">Подбираем вам специалиста...</div>
+    </div>
+  
+</div> -->
+<div class="loader-container">
+<div class="loader">
+    <span class="loader__element"></span>
+    
+  </div>
+  <div class="spinner-text">Подбираем вам специалиста...</div>
+</div>
+  <!-- <div class="cube_container">
+    <div class="cube">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="spinner-text">Подбираем вам специалиста...</div>
+  </div> -->
+  
+
+<body>
+    <div id="expert_block">
+        <span class="expert_name"></span>
+        <span class="expert_title">Ваш специалист тех. поддержки :)</span>
+    </div>
+    <div class="chat_wrapp">
+        <div class="chat_header">
+
+            <div class="burger">
+                <!-- <div class="hamburger" id="hamburger-1">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div> -->
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+                    xml:space="preserve" class="">
+                    <g>
+                        <path fill="#a76bd4e6" fill-rule="evenodd"
+                            d="M3 6a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1zm0 6a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1zm0 6a1 1 0 0 1 1-1h5a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1z"
+                            clip-rule="evenodd" opacity="1" data-original="#000000" class=""></path>
+                    </g>
+                </svg> -->
+            </div>
+            <!-- <div class="user_list-header-nav">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
+                        class="icon-xl-heavy">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M8.857 3h6.286c1.084 0 1.958 0 2.666.058.729.06 1.369.185 1.961.487a5 5 0 0 1 2.185 2.185c.302.592.428 1.233.487 1.961.058.708.058 1.582.058 2.666v3.286c0 1.084 0 1.958-.058 2.666-.06.729-.185 1.369-.487 1.961a5 5 0 0 1-2.185 2.185c-.592.302-1.232.428-1.961.487C17.1 21 16.227 21 15.143 21H8.857c-1.084 0-1.958 0-2.666-.058-.728-.06-1.369-.185-1.96-.487a5 5 0 0 1-2.186-2.185c-.302-.592-.428-1.232-.487-1.961C1.5 15.6 1.5 14.727 1.5 13.643v-3.286c0-1.084 0-1.958.058-2.666.06-.728.185-1.369.487-1.96A5 5 0 0 1 4.23 3.544c.592-.302 1.233-.428 1.961-.487C6.9 3 7.773 3 8.857 3M6.354 5.051c-.605.05-.953.142-1.216.276a3 3 0 0 0-1.311 1.311c-.134.263-.226.611-.276 1.216-.05.617-.051 1.41-.051 2.546v3.2c0 1.137 0 1.929.051 2.546.05.605.142.953.276 1.216a3 3 0 0 0 1.311 1.311c.263.134.611.226 1.216.276.617.05 1.41.051 2.546.051h.6V5h-.6c-1.137 0-1.929 0-2.546.051M11.5 5v14h3.6c1.137 0 1.929 0 2.546-.051.605-.05.953-.142 1.216-.276a3 3 0 0 0 1.311-1.311c.134-.263.226-.611.276-1.216.05-.617.051-1.41.051-2.546v-3.2c0-1.137 0-1.929-.051-2.546-.05-.605-.142-.953-.276-1.216a3 3 0 0 0-1.311-1.311c-.263-.134-.611-.226-1.216-.276C17.029 5.001 16.236 5 15.1 5zM5 8.5a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1M5 12a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <span>F.A.Q</span>
+                </div>
+                <div class="user_list-onBack">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="512" height="512" x="0" y="0" viewBox="0 0 128 128"
+                         xml:space="preserve" class="">
+                        <g>
+                            <path
+                                d="M105 23C82.4.4 45.6.4 23 23 12 33.9 6 48.5 6 64s6 30.1 17 41c11.3 11.3 26.2 17 41 17 14.9 0 29.7-5.7 41-17 11-11 17-25.5 17-41s-6-30.1-17-41zm-4.2 77.8c-20.3 20.3-53.3 20.3-73.5 0C17.4 90.9 12 77.9 12 64s5.4-26.9 15.2-36.8C37.4 17.1 50.7 12 64 12s26.6 5.1 36.8 15.2C110.6 37.1 116 50.1 116 64s-5.4 26.9-15.2 36.8z"
+                                fill="#a76bd4e6" opacity="1" data-original="#a76bd4e6" class=""></path>
+                            <path
+                                d="M82 61H51.2l9.9-9.9c1.2-1.2 1.2-3.1 0-4.2-1.2-1.2-3.1-1.2-4.2 0l-15 15c-1.2 1.2-1.2 3.1 0 4.2l15 15c.6.6 1.4.9 2.1.9s1.5-.3 2.1-.9c1.2-1.2 1.2-3.1 0-4.2L51.2 67H82c1.7 0 3-1.3 3-3s-1.3-3-3-3z"
+                                fill="#a76bd4e6" opacity="1" data-original="#a76bd4e6" class=""></path>
+                        </g>
+                    </svg>
+                </div>
+            </div> -->
+            <div class="chat_header-expert-name">
+                <div>
+                    <span class="chat_header-exp-desc">Ассистент поддержки:<span class="expert_name-place"> </span></span>
+                </div>
+            </div>
+        </div>
+       
+
+            <div class="chat_view_window">
+                <div class="chat_message-window scroll_bar">
+                    <div class="message_wrapper">
+                        <div class="img_user">
+                        </div>
+                        <div class="test_box message other_message left">
+                            <div class="chat_typing">
+                                <p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="footer">
+                    <div class="footer_form-wrapp">
+                        <form class="footer_form">
+                            <input cols="50" disabled placeholder="Напишите сообщение"
+                                class="scroll_bar form_textarea"></input>
+                            <button class="form_button">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0"
+                                    viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="">
+                                    <g>
+                                        <path
+                                            d="m29.528 5.07-7.561 22.683a1.993 1.993 0 0 1-1.897 1.368h-.03a1.992 1.992 0 0 1-1.886-1.426l-2.853-9.513 7.44-7.44a1 1 0 1 0-1.414-1.415l-7.44 7.441-9.513-2.854a2 2 0 0 1-.058-3.813L26.999 2.54a2 2 0 0 1 2.53 2.53zM8.741 17.327a1 1 0 0 0-1.414 0l-5 5a1 1 0 0 0 1.414 1.414l5-5a1 1 0 0 0 0-1.414zm6 6a1 1 0 0 0-1.414 0l-5 5a1 1 0 1 0 1.414 1.414l5-5a1 1 0 0 0 0-1.414zm-5.039-1.039a1 1 0 0 0-1.414.01l-4.966 5.034a1 1 0 1 0 1.424 1.404l4.966-5.034a1 1 0 0 0-.01-1.414z"
+                                            fill="#ffffff" opacity="1" data-original="#000000" class=""></path>
+                                    </g>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./chat.js"></script>
+</body>
+
+</html>
